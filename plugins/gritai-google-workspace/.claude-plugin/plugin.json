@@ -1,0 +1,11 @@
+{
+  "name": "gritai-google-workspace",
+  "description": "Full Google Workspace integration via gws CLI — Gmail, Calendar, Drive, Sheets, Docs, Slides, Chat, Tasks, Forms, Meet, and more",
+  "version": "1.0.0",
+  "author": {
+    "name": "GritAI"
+  },
+  "homepage": "https://github.com/gritai/gritai-marketplace",
+  "license": "MIT",
+  "keywords": ["google", "workspace", "gmail", "calendar", "drive", "sheets", "docs", "slides", "chat", "tasks", "gws"]
+}

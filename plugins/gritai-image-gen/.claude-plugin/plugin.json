@@ -1,0 +1,11 @@
+{
+  "name": "gritai-image-gen",
+  "description": "Generate photorealistic images using Google Imagen 3 via the Nano Banana MCP server",
+  "version": "1.0.0",
+  "author": {
+    "name": "GritAI"
+  },
+  "homepage": "https://gritai.com/plugins/image-gen",
+  "license": "MIT",
+  "keywords": ["image", "generation", "imagen", "google", "ai", "nanobanana"]
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "gritai-marketplace-curated",
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Curated GritAI plugins for Claude Code & Cowork."
+  },
+  "owner": {
+    "name": "GritAI",
+    "email": "plugins@gritai.com"
+  },
+  "plugins": [
+    {
+      "name": "gritai-audio",
+      "source": "./plugins/gritai-audio",
+      "description": "Generate speech and audio with ElevenLabs",
+      "version": "1.0.0",
+      "category": "content",
+      "tags": ["audio", "speech", "elevenlabs", "tts"]
+    },
+    {
+      "name": "gritai-design",
+      "source": "./plugins/gritai-design",
+      "description": "Curated design systems and visual themes for building polished web interfaces",
+      "version": "1.0.0",
+      "category": "content",
+      "tags": ["design", "themes", "ui", "tailwind", "design-system", "visual"]
+    },
+    {
+      "name": "gritai-google-workspace",
+      "source": "./plugins/gritai-google-workspace",
+      "description": "Full Google Workspace suite via gws CLI — Gmail, Calendar, Drive, Sheets, Docs, Slides, Chat, Tasks, Forms, Meet, People, Admin",
+      "version": "1.0.0",
+      "category": "integrations",
+      "tags": ["google", "workspace", "gmail", "calendar", "drive", "sheets", "docs", "slides", "chat", "tasks", "gws"]
+    },
+    {
+      "name": "gritai-image-gen",
+      "source": "./plugins/gritai-image-gen",
+      "description": "Generate images using Google Imagen 3 via Nano Banana MCP server",
+      "version": "1.0.0",
+      "category": "content",
+      "tags": ["images", "generation", "creative", "gemini"]
+    }
+  ]
+}

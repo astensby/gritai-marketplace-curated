@@ -1,0 +1,11 @@
+{
+  "name": "gritai-audio",
+  "description": "Generate speech, clone voices, and create audio content using ElevenLabs AI",
+  "version": "1.0.0",
+  "author": {
+    "name": "GritAI"
+  },
+  "homepage": "https://gritai.com/plugins/audio",
+  "license": "MIT",
+  "keywords": ["audio", "speech", "voice", "elevenlabs", "tts", "podcast"]
+}

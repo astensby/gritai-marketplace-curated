@@ -1,0 +1,9 @@
+{
+  "name": "gritai-design",
+  "description": "Curated design systems and visual themes for building polished web interfaces",
+  "version": "1.0.0",
+  "author": { "name": "GritAI" },
+  "homepage": "https://gritai.com/plugins/design",
+  "license": "MIT",
+  "keywords": ["design", "themes", "ui", "tailwind", "design-system", "visual"]
+}

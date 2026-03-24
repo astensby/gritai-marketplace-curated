@@ -1,0 +1,14 @@
+{
+  "name": "gritai-marketplace-curated",
+  "version": "1.0.0",
+  "description": "Curated GritAI plugins for Claude Code",
+  "private": false,
+  "scripts": {
+    "build": "node scripts/build-servers.mjs",
+    "build:nanobanana": "node scripts/build-servers.mjs nanobanana"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  },
+  "license": "MIT"
+}
