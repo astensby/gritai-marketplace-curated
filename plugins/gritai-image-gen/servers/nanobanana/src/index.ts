@@ -155,17 +155,24 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 
     // Initialize Gemini image generation model with user's selection
     const model = genAI.getGenerativeModel({
-      model: selectedModel
+      model: selectedModel,
+      generationConfig: {
+        responseModalities: ["IMAGE", "TEXT"],
+        candidateCount: numImages,
+      } as any,
     });
 
-    // Build the generation config
-    const generationConfig: any = {
-      candidateCount: numImages,
-    };
+    // Build the prompt, appending aspect ratio guidance
+    let fullPrompt = args.prompt;
+    if (args.negativePrompt) {
+      fullPrompt += `\n\nAvoid: ${args.negativePrompt}`;
+    }
+    if (aspectRatio !== "1:1") {
+      fullPrompt += `\n\nAspect ratio: ${aspectRatio}`;
+    }
 
-    // Generate the image using the prompt directly
-    // gemini-2.5-flash-image returns actual image data
-    const result = await model.generateContent(args.prompt);
+    // Generate the image
+    const result = await model.generateContent(fullPrompt);
 
     const response = result.response;
 
