@@ -1,6 +1,7 @@
 ---
 name: gws-slides
-description: "Google Slides via gws CLI — create presentations, add slides, read content. Use when the user wants to create or read Google Slides presentations."
+description: "Google Slides via gws CLI — create presentations, add slides, read content. Use when the user wants to create or read Google Slides presentations, build a pitch deck, make a slide deck, prepare presentation slides, or extract content from an existing presentation."
+allowed-tools: Bash, Read
 ---
 
 # Google Slides (gws CLI)

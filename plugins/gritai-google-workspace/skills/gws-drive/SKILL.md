@@ -1,6 +1,7 @@
 ---
 name: gws-drive
 description: "Google Drive via gws CLI — list, search, upload, download, share, organize files and folders, manage permissions. Use when the user wants to work with Google Drive files, upload/download documents, share files, or organize folders."
+allowed-tools: Bash, Read
 ---
 
 # Google Drive (gws CLI)

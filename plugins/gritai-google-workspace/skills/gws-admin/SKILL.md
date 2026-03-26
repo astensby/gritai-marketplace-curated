@@ -1,6 +1,7 @@
 ---
 name: gws-admin
 description: "Google Workspace Admin via gws CLI — audit logs, usage reports, security monitoring. Use when the user wants admin reports, audit trails, or usage statistics for their Workspace domain."
+allowed-tools: Bash, Read
 ---
 
 # Google Workspace Admin Reports (gws CLI)

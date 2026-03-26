@@ -1,6 +1,7 @@
 ---
 name: gws-workflow-email-to-task
 description: "Convert a Gmail message into a Google Tasks entry — extracts subject and key details. Use when the user wants to turn an email into a task, add an email to their to-do list, or track email follow-ups."
+allowed-tools: Bash, Read
 ---
 
 # Email to Task (gws CLI)

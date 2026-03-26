@@ -5,7 +5,7 @@
   "author": {
     "name": "GritAI"
   },
-  "homepage": "https://gritai.com/plugins/audio",
+  "homepage": "https://github.com/astensby/gritai-marketplace-curated",
   "license": "MIT",
   "keywords": ["audio", "speech", "voice", "elevenlabs", "tts", "podcast"]
 }

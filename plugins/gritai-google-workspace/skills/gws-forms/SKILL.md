@@ -1,6 +1,7 @@
 ---
 name: gws-forms
 description: "Google Forms via gws CLI — create forms, read responses, manage questions. Use when the user wants to create surveys, feedback forms, or collect responses."
+allowed-tools: Bash, Read
 ---
 
 # Google Forms (gws CLI)

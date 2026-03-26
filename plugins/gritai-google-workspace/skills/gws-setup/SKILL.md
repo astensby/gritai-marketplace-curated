@@ -1,6 +1,7 @@
 ---
 name: gws-setup
 description: "Install and authenticate the gws CLI for Google Workspace access. Use when the user needs to set up Google Workspace, encounters auth errors, or when gws is not installed."
+allowed-tools: Bash, Read
 ---
 
 # Google Workspace Setup (gws CLI)

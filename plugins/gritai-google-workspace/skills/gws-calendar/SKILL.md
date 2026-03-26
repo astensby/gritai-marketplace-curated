@@ -1,6 +1,7 @@
 ---
 name: gws-calendar
 description: "Google Calendar via gws CLI — view agenda, create/update/delete events, check availability, manage attendees. Use when the user wants to work with calendar events, schedule meetings, check free/busy, or manage their schedule."
+allowed-tools: Bash, Read
 ---
 
 # Google Calendar (gws CLI)

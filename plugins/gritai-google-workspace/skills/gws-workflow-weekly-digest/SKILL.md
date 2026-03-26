@@ -1,6 +1,7 @@
 ---
 name: gws-workflow-weekly-digest
 description: "Weekly summary — this week's meetings, unread email count, and open tasks. Use when the user asks for a weekly overview, end-of-week summary, or weekly planning context."
+allowed-tools: Bash, Read
 ---
 
 # Weekly Digest (gws CLI)

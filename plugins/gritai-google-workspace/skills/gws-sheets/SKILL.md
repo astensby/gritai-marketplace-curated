@@ -1,6 +1,7 @@
 ---
 name: gws-sheets
 description: "Google Sheets via gws CLI — read, write, append, create spreadsheets, manage tabs and formatting. Use when the user wants to work with spreadsheets, read/write cell data, create trackers, or analyze tabular data in Google Sheets."
+allowed-tools: Bash, Read
 ---
 
 # Google Sheets (gws CLI)

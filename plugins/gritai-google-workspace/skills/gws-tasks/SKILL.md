@@ -1,6 +1,7 @@
 ---
 name: gws-tasks
 description: "Google Tasks via gws CLI — create, list, complete, and manage task lists and tasks. Use when the user wants to manage their to-do lists, create tasks, mark tasks complete, or review overdue items."
+allowed-tools: Bash, Read
 ---
 
 # Google Tasks (gws CLI)

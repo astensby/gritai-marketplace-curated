@@ -1,6 +1,7 @@
 ---
 name: gws-chat
 description: "Google Chat via gws CLI — send messages, manage spaces, list conversations. Use when the user wants to send messages in Google Chat spaces or manage Chat conversations."
+allowed-tools: Bash, Read
 ---
 
 # Google Chat (gws CLI)

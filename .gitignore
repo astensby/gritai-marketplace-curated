@@ -4,3 +4,6 @@ node_modules/
 .env
 .env.local
 .env.*.local
+
+# Server dist/ bundles ARE committed — users need them at install time.
+# Do not add dist/ to this file.

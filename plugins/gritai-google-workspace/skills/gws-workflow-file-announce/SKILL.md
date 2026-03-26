@@ -1,6 +1,7 @@
 ---
 name: gws-workflow-file-announce
 description: "Announce a Drive file in a Google Chat space — shares the link with a message. Use when the user wants to share a document in Chat, announce a new file to a team, or notify a Chat space about a Drive file."
+allowed-tools: Bash, Read
 ---
 
 # File Announce (gws CLI)

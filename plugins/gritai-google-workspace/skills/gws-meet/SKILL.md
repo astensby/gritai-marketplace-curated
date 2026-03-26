@@ -1,6 +1,7 @@
 ---
 name: gws-meet
-description: "Google Meet via gws CLI — create meeting spaces, check participant info. Use when the user wants to create a Meet link or review meeting attendance."
+description: "Google Meet via gws CLI — create meeting spaces, check participant info. Use when the user wants to create a Meet link, set up a video call, generate a conference link, create a meeting room, or check meeting attendance and participants."
+allowed-tools: Bash, Read
 ---
 
 # Google Meet (gws CLI)

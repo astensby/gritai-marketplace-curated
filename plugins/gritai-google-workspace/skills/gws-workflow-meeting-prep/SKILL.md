@@ -1,6 +1,7 @@
 ---
 name: gws-workflow-meeting-prep
 description: "Meeting preparation — shows next meeting's agenda, attendees, description, and linked documents. Use when the user asks to prepare for a meeting, wants meeting context, or asks 'what's my next meeting about?'"
+allowed-tools: Bash, Read
 ---
 
 # Meeting Preparation (gws CLI)

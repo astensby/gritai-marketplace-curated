@@ -1,6 +1,7 @@
 ---
 name: gws-gmail
 description: "Gmail via gws CLI — send, read, triage, reply, forward, watch, search, draft, label, and manage email. Use when the user wants to work with email, send messages, check inbox, reply to threads, or manage labels."
+allowed-tools: Bash, Read
 ---
 
 # Gmail (gws CLI)

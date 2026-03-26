@@ -160,6 +160,19 @@ No secrets are stored in this repository. Plugins that need API keys read them f
 | `ELEVENLABS_API_KEY` | gritai-audio | [elevenlabs.io](https://elevenlabs.io) |
 | `GEMINI_API_KEY` | gritai-image-gen | [aistudio.google.com/apikey](https://aistudio.google.com/apikey) |
 
+**Alternative to shell exports:** You can set these in Claude Code settings instead of your shell profile:
+
+```json
+// ~/.claude/settings.json (user-level, all projects)
+// or .claude/settings.local.json (project-level, gitignored)
+{
+  "env": {
+    "GEMINI_API_KEY": "your-key-here",
+    "ELEVENLABS_API_KEY": "your-key-here"
+  }
+}
+```
+
 ## Contributing
 
 1. Fork this repo

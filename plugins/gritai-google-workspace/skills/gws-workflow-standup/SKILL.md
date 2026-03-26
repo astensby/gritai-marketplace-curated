@@ -1,6 +1,7 @@
 ---
 name: gws-workflow-standup
 description: "Daily standup report — combines today's calendar events with open tasks into a concise summary. Use when the user asks for a standup update, daily briefing, or morning summary."
+allowed-tools: Bash, Read
 ---
 
 # Daily Standup Report (gws CLI)

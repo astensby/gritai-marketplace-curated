@@ -1,6 +1,7 @@
 ---
 name: gws-people
 description: "Google People/Contacts via gws CLI — look up contacts, search directory, sync contacts. Use when the user wants to look up contact information, search the company directory, or manage contacts."
+allowed-tools: Bash, Read
 ---
 
 # Google People / Contacts (gws CLI)

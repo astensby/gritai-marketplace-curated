@@ -1,6 +1,7 @@
 ---
 name: gws-docs
 description: "Google Docs via gws CLI — read, write, append text, create documents, apply formatting. Use when the user wants to create or edit Google Docs, write reports, or extract text from documents."
+allowed-tools: Bash, Read
 ---
 
 # Google Docs (gws CLI)

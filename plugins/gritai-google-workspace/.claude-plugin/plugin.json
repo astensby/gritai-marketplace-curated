@@ -5,7 +5,7 @@
   "author": {
     "name": "GritAI"
   },
-  "homepage": "https://github.com/gritai/gritai-marketplace",
+  "homepage": "https://github.com/astensby/gritai-marketplace-curated",
   "license": "MIT",
   "keywords": ["google", "workspace", "gmail", "calendar", "drive", "sheets", "docs", "slides", "chat", "tasks", "gws"]
 }
