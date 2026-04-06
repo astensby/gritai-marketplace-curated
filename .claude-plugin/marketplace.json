@@ -41,6 +41,30 @@
       "version": "1.0.0",
       "category": "content",
       "tags": ["images", "generation", "creative", "gemini"]
+    },
+    {
+      "name": "gritai-data-ssb",
+      "source": "./plugins/gritai-data-ssb",
+      "description": "Statistics Norway open data — demographics, economy, labor, health, education",
+      "version": "1.0.0",
+      "category": "data",
+      "tags": ["data", "statistics", "norway", "ssb"]
+    },
+    {
+      "name": "gritai-data-norges-bank",
+      "source": "./plugins/gritai-data-norges-bank",
+      "description": "Norges Bank financial data — exchange rates, policy rates, bond yields",
+      "version": "1.0.0",
+      "category": "data",
+      "tags": ["data", "finance", "norway", "norges-bank"]
+    },
+    {
+      "name": "gritai-data-brreg",
+      "source": "./plugins/gritai-data-brreg",
+      "description": "Norwegian company data — search, lookup, board members, financials",
+      "version": "1.0.0",
+      "category": "data",
+      "tags": ["data", "companies", "norway", "brreg"]
     }
   ]
 }
