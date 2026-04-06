@@ -1,0 +1,9 @@
+{
+  "name": "gritai-data-ssb",
+  "description": "Access Statistics Norway (SSB) open data — demographics, economy, labor, health, education, and more",
+  "version": "1.0.0",
+  "author": { "name": "GritAI" },
+  "homepage": "https://github.com/astensby/gritai-marketplace-curated",
+  "license": "MIT",
+  "keywords": ["data", "statistics", "norway", "ssb", "demographics", "economy"]
+}
