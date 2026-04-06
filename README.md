@@ -1,6 +1,6 @@
 # GritAI Marketplace (Curated)
 
-A curated collection of [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and Cowork plugins by GritAI — audio generation, design systems, Google Workspace integration, and image generation.
+A curated collection of [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and Cowork plugins by GritAI — audio generation, design systems, Google Workspace integration, image generation, and Norwegian public data access.
 
 ## Plugins
 
@@ -10,6 +10,9 @@ A curated collection of [Claude Code](https://docs.anthropic.com/en/docs/claude-
 | [gritai-design](#gritai-design) | Design systems and themes for web UIs | Skills | Nothing |
 | [gritai-google-workspace](#gritai-google-workspace) | Gmail, Calendar, Drive, Sheets, Docs, and more | Skills | `gws` CLI |
 | [gritai-image-gen](#gritai-image-gen) | Image generation with Google Imagen 3 | MCP Server | `GEMINI_API_KEY` |
+| [gritai-data-ssb](#gritai-data-ssb) | Statistics Norway open data (demographics, economy, labor, etc.) | Skills | Python 3 |
+| [gritai-data-norges-bank](#gritai-data-norges-bank) | Norges Bank financial data (exchange rates, policy rates, bonds) | Skills | Python 3 |
+| [gritai-data-brreg](#gritai-data-brreg) | Norwegian company data (search, lookup, board, financials) | Skills | Python 3 |
 
 ## Quick Start
 
@@ -133,6 +136,36 @@ npm install        # Install esbuild
 npm run build      # Rebuild the server bundle
 ```
 
+---
+
+### gritai-data-ssb
+
+Access Statistics Norway's open data API — ~3,900 statistical tables covering demographics, economy, health, education, labor, housing, prices, trade, and environment.
+
+**Setup:** Requires Python 3 (uses only standard library). No API keys needed — all data is open.
+
+**Usage:** The plugin provides a `ssb_fetch.py` CLI tool for searching tables, exploring metadata, and fetching data as CSV. Typical workflow: search -> metadata -> fetch -> analyze.
+
+---
+
+### gritai-data-norges-bank
+
+Access Norges Bank's financial data API — exchange rates for 41 currencies, policy rates, NOWA overnight rates, government bond yields, and financial indicators.
+
+**Setup:** Requires Python 3 (uses only standard library). No API keys needed — all data is open.
+
+**Usage:** The plugin provides a `nb_fetch.py` CLI tool for listing datasets, exploring structure, and fetching time series as CSV.
+
+---
+
+### gritai-data-brreg
+
+Search and analyze Norwegian companies via Brønnøysundregistrene — the Entity Registry (Enhetsregisteret) and Financial Statements Registry (Regnskapsregisteret).
+
+**Setup:** Requires Python 3 (uses only standard library). No API keys needed — all data is open.
+
+**Usage:** The plugin provides a `brreg_fetch.py` CLI tool for searching companies, looking up details, fetching board members/roles, and retrieving financial statements.
+
 ## Project Structure
 
 ```
@@ -141,7 +174,10 @@ gritai-marketplace-curated/
 │   ├── gritai-audio/            # ElevenLabs MCP server config
 │   ├── gritai-design/           # Design system skills + Tailwind configs
 │   ├── gritai-google-workspace/ # 18 Google Workspace skill files
-│   └── gritai-image-gen/        # Imagen 3 MCP server (source + bundle)
+│   ├── gritai-image-gen/        # Imagen 3 MCP server (source + bundle)
+│   ├── gritai-data-ssb/             # Statistics Norway data skill
+│   ├── gritai-data-norges-bank/     # Norges Bank financial data skill
+│   └── gritai-data-brreg/           # Norwegian company data skill
 ├── scripts/
 │   └── build-servers.mjs        # esbuild bundler for MCP servers
 ├── .claude-plugin/
