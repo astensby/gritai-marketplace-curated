@@ -1,0 +1,9 @@
+{
+  "name": "gritai-data-brreg",
+  "description": "Search and analyze Norwegian companies via Brønnøysundregistrene — company lookup, board members, financials",
+  "version": "1.0.0",
+  "author": { "name": "GritAI" },
+  "homepage": "https://github.com/astensby/gritai-marketplace-curated",
+  "license": "MIT",
+  "keywords": ["data", "companies", "norway", "brreg", "business-registry", "financials"]
+}
