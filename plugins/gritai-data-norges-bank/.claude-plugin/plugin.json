@@ -1,0 +1,9 @@
+{
+  "name": "gritai-data-norges-bank",
+  "description": "Access Norges Bank financial data — exchange rates, policy rates, bond yields, financial indicators",
+  "version": "1.0.0",
+  "author": { "name": "GritAI" },
+  "homepage": "https://github.com/astensby/gritai-marketplace-curated",
+  "license": "MIT",
+  "keywords": ["data", "finance", "norway", "norges-bank", "exchange-rates", "interest-rates"]
+}
