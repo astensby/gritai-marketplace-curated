@@ -4,6 +4,9 @@
   "description": "MCP server for Google Nano Banana (Imagen 3) image generation via Gemini API",
   "type": "module",
   "main": "dist/index.js",
+  "engines": {
+    "node": "^22.23.4 || ^24.22.1 || >=26.12.1"
+  },
   "bin": {
     "nanobanana-mcp": "dist/index.js"
   },
