@@ -26,7 +26,7 @@
   "author": "GritAI",
   "license": "MIT",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.28.0",
+    "@modelcontextprotocol/sdk": "^1.32.0",
     "@google/generative-ai": "^0.24.1"
   },
   "devDependencies": {
