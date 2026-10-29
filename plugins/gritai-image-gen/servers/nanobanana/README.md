@@ -12,16 +12,29 @@ A Model Context Protocol (MCP) server that provides AI image generation capabili
 
 ## Prerequisites
 
-- Node.js 18 or higher
+- Node.js `^22.23.4 || ^24.22.1 || >=26.12.1` (the `engines` field in `package.json`)
 - Google Gemini API key
 
 ## Installation
 
+Nothing to build. The server ships pre-bundled as `dist/index.js` inside the
+`gritai-image-gen` plugin, and the plugin's `.mcp.json` starts it. Installing
+the plugin is enough.
+
+### Rebuilding the bundle
+
+Only needed after changing `src/` or the lockfile. Run from the **repository
+root**, not from this directory:
+
 ```bash
-cd mcp-servers/nanobanana
-npm install
-npm run build
+npm ci                     # installs esbuild from the root lockfile
+npm run build:nanobanana   # bundles src/index.ts + dependencies into dist/index.js
 ```
+
+Do not run `npm run build` (or `npm run dev`) inside
+`plugins/gritai-image-gen/servers/nanobanana/`. Those scripts run `tsc`, which
+overwrites the committed bundle with unbundled output that needs
+`node_modules` at runtime.
 
 ## Configuration
 
@@ -37,15 +50,16 @@ Or configure it in GritAgent's Settings → API Keys.
 
 ### With Claude Code
 
-Add to your `.claude/settings.json`:
+Installing the `gritai-image-gen` plugin registers the server automatically
+(see `plugins/gritai-image-gen/.mcp.json`). To run the bundle outside the
+plugin, add it to a project `.mcp.json`:
 
 ```json
 {
   "mcpServers": {
     "nanobanana": {
-      "transport": "stdio",
       "command": "node",
-      "args": ["/path/to/mcp-servers/nanobanana/dist/index.js"],
+      "args": ["/path/to/gritai-marketplace-curated/plugins/gritai-image-gen/servers/nanobanana/dist/index.js"],
       "env": {
         "GEMINI_API_KEY": "${GEMINI_API_KEY}"
       }
@@ -88,18 +102,14 @@ Generate images using Google's Nano Banana (Imagen 3) model.
 ## Development
 
 ### Build
+From the repository root (see [Rebuilding the bundle](#rebuilding-the-bundle)):
 ```bash
-npm run build
+npm run build:nanobanana
 ```
 
-### Watch Mode
+### Run
 ```bash
-npm run dev
-```
-
-### Test
-```bash
-npm start
+GEMINI_API_KEY=... npm start   # runs dist/index.js over stdio
 ```
 
 ## Troubleshooting

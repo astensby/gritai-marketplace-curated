@@ -8,7 +8,7 @@
     "build:nanobanana": "node scripts/build-servers.mjs nanobanana"
   },
   "devDependencies": {
-    "esbuild": "^0.24.0"
+    "esbuild": "0.25.0"
   },
   "license": "MIT"
 }
